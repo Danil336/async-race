@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="header">
+        <div class="header_nav">
+          <div class="full_head_nav">
+            <div class="nav_buttons">
+              <button class="nav_btn to_garage_btn">To garage</button>
+              <button class="nav_btn to_winners_btn">To winners</button>
+            </div>
+            <div class="create_or_update in_garage">
+              <div class="input_area create_area">
+                <input type="text" class="input create_input" />
+                <div class="choise_color">
+                  <input type="color" class="color_input color_create_input" />
+                </div>
+                <button class="i_button create_button">CREATE</button>
+              </div>
+              <div class="input_area update_area">
+                <input type="text" class="input update_input" />
+                <div class="choise_color">
+                  <input type="color" class="color_input color_update_input" />
+                </div>
+                <button class="i_button update_button">UPDATE</button>
+              </div>
+            </div>
+          </div>
+          <div class="car_control_nav in_garage">
+            <div class="car_control">
+              <button class="control_btn all_cars_race_btn">RACE</button>
+              <button class="control_btn all_cars_stop_btn control_unactive">RESET</button>
+            </div>
+            <div class="car_create">
+              <button class="create_btn">GENERATE CARS</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="count_down">Гонка начинается..</div>
+
+        <div class="winner_alert">имя побеждает за 000 секунд</div>
+      </div>
+
+    <div class="garage in_garage">
+      <div class="garage_title">Garage (000)</div>
+      <div class="page">Page #1</div>
+
+      <div class="cars">
+
+      </div>
+    </div>
+
+    <div class="winners in_garage_unshown">
+      <div class="winners_title">Winners (000)</div>
+      <div class="winners_page">Page #000</div>
+      <div class="winners_tabl">
+        <div class="tabl_header">
+          <div class="winner_number winners_info">Car?</div>
+          <div class="winner_car_name winners_info">Car name</div>
+          <div class="winner_wins winners_info" data-order="ASC">Wins</div>
+          <div class="winner_best_time winners_info" data-order="ASC">Best time</div>
+        </div>
+        <div class="cars_winners">
+
+        </div>
+      </div>
+      <div class="winners_pagination">
+        <button class="winnner_pages_btn winners_prev_btn">Prev</button>
+        <button class="winnner_pages_btn winners_next_btn">Next</button>
+      </div>
+    </div>
+  </main>
+    <div class="pagenator in_garage">
+      <div class="pagitane_buttons">
+        <button class="prev_btn">Prev</button>
+        <button class="next_btn">Next</button>
+      </div>
+    </div>
+  </body>
+</html>

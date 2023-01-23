@@ -1,0 +1,377 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+/*--------------------*/
+
+html {
+  background-color: rgb(42, 42, 42);
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+  display: flex;
+  gap: 50px;
+}
+.main{
+  height: 98%;
+}
+
+.full_head_nav {
+  width: 270px;
+}
+
+.nav_buttons {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  height: 25px;
+}
+.nav_btn {
+  width: 27.7%;
+  background-color: greenyellow;
+  border-radius: 3px;
+}
+.create_or_update {
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.input_area {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+
+.input {
+  width: 60%;
+  height: 24px;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.choise_color {
+  width: 13%;
+  height: 24px;
+  background-color: rgb(204, 191, 191);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+}
+.color_input {
+  width: 90%;
+  height: 85%;
+  border-radius: 3px;
+  margin: 2px 0 0 0;
+  cursor: pointer;
+}
+.i_button {
+  width: 25%;
+  border-radius: 3px;
+  background-color: rgb(78, 78, 214);
+}
+.car_control_nav {
+  margin: 10px 0 0 0;
+  display: flex;
+  width: 270px;
+  gap: 5px;
+}
+.car_control {
+  display: flex;
+  gap: 5px;
+  width: 60%;
+}
+.control_btn {
+  width: 48%;
+  background-color: greenyellow;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.control_unactive {
+  background-color: rgb(59, 89, 15);
+  cursor: default;
+}
+
+.car_create {
+  width: 40%;
+}
+.create_btn {
+  background-color: rgb(86, 86, 214);
+  font-size: 13px;
+  border-radius: 3px;
+}
+
+.create_unactive {
+  cursor: default;
+  background-color: rgb(69, 69, 122);
+  font-size: 13px;
+  border-radius: 3px;
+}
+
+.garage {
+  margin: 10px 0 0 0;
+  color: white;
+}
+
+
+.garage_title {
+  font-size: 25px;
+}
+.page {
+  font-size: 18px;
+  margin: 5px 0 0 0;
+}
+.car_info {
+  display: flex;
+  margin: 7px 0 0 0;
+  width: 220px;
+  justify-content: space-between;
+}
+.car_buttons {
+  display: flex;
+  gap: 5px;
+  width: 140%;
+}
+.car_control_btn {
+  width: 60px;
+  height: 20px;
+  border-bottom: 3px solid rgb(100, 100, 212);
+  border-radius: 3px;
+}
+
+.car_control_unactive {
+  cursor: default;
+  background-color: gray;
+  border-bottom: 3px solid rgb(62, 62, 92);
+}
+
+.car_title {
+  color: rgb(250, 222, 83);
+  padding: 3px 0 0 0;
+}
+
+.car_command_buttons {
+  margin: 5px 0 0 0;
+  display: flex;
+  gap: 5px;
+}
+.command_btn {
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  background-color: black;
+  color: rgb(120, 120, 120);
+  border: 1px solid rgb(70, 70, 70);
+  cursor: auto;
+}
+
+.active {
+  cursor: pointer;
+  color: white;
+  border: 1px solid gray;
+}
+
+.all_about_car {
+  display: flex;
+}
+.car_and_finish {
+  display: flex;
+  margin: 5px 0 0 0;
+  width: 100%;
+  justify-content: space-between;
+  transition: all 3s;
+  // &:hover{
+  //   justify-content: right;
+  //   transition: all 3s;
+  //   width: 200px;
+  // }
+  height: 36px;
+}
+
+.car_image {
+  margin: 0 0 0 8px;
+  width: 70px;
+  transition: all 3s;
+  & svg {
+    width: 70px;
+    height: 35px;
+  }
+}
+.finish {
+  position: absolute;
+  // left: 86.5%;
+  // margin: 0 0 0 auto;
+}
+.car_finish {
+  width: 30px;
+  height: 30px;
+  // margin: 0 100px 0 0;
+  position: absolute;
+  left: 86.5%;
+}
+
+.road {
+  width: 100%;
+  height: 1px;
+  border-bottom: 2px dashed white;
+}
+
+.pagenator {
+  margin: 0 0 0px 0;
+}
+.pagitane_buttons {
+  position: absolute;
+  top: 97%;
+  left: 1%;
+}
+.prev_btn {
+  width: 50px;
+  border-radius: 2px;
+}
+.next_btn {
+  width: 50px;
+  border-radius: 2px;
+}
+
+.count_down {
+  margin: 60px 0 0 0;
+  font-size: 30px;
+  color: rgb(190, 46, 46);
+
+  display: none;
+}
+
+.winner_alert{
+  margin: 60px 0 0 0;
+  font-size: 30px;
+  color: rgb(177, 55, 31);
+
+  display: none;
+}
+
+.show_count_down {
+  display: block;
+}
+
+.in_garage_unshown {
+  display: none;
+}
+
+.winners {
+  color:  white;
+}
+.winners_title {
+  margin: 20px 0 0 0;
+  font-size: 30px;
+}
+.winners_page {
+  font-size: 20px;
+  margin: 10px 0 0 0;
+}
+.winners_tabl {
+  width: 300px;
+}
+
+.tabl_header {
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(60, 60, 215);
+  height: 25px;
+}
+.winners_info{
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.winner {
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+  padding: 6px 0 0px 0;
+  background-color: rgb(36, 34, 34);
+}
+
+.winnner_pages_btn {
+  margin: 20px 0 0 0;
+  width: 50px;
+  border-radius: 2px;
+}

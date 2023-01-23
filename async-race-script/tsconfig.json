@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "module": "es6",
+    "target": "es5",
+    "lib": ["DOM", "DOM.Iterable", "ES2017"],
+    "allowJs": true
+  },
+  "files": ["src/index.ts"]
+}
